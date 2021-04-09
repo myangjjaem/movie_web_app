@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>가입페이지</title>
+    </head>
+    <body>
+        <from name="test" action="/account/dojoin/" method="post">{% csrf_token %}
+            ID : <input type="text" name="id"> </br>
+            PW : <input type="password" name="pw"> </br>
+            PW CONF : <<input type="password" name="pwconf"> </br>
+            <input type="submit" value="전송">
+        </from>
+    </body>
+</html>
